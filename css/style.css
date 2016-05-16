@@ -1,9 +1,12 @@
-
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
 body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
+	background-color: #120C10;
 }
+
 a:visited, a{
 	text-decoration: none;
 }
@@ -12,7 +15,7 @@ a:visited, a{
 }
 /*header area*/
 .top-header{
-	background: #02918C;
+	background: transparent;
 	position: fixed;
 	width: 100%;
 	z-index: 333;
@@ -72,18 +75,19 @@ ul.nav{
 }
 /*banner area*/
 .banner{
-	background: url(../img/backgroundcolor2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 .banner h3{
+	font-family: 'Dancing Script', cursive;
 	font-size: 30px;
 	color: #fff;
 	margin-top: 205px;
 	font-weight: 800;
 }
 .banner h1{
+	font-family: 'Dancing Script', cursive;
 	font-size: 68px;
 	color: #fff;
 	font-weight: 800;
@@ -91,6 +95,7 @@ ul.nav{
 	letter-spacing: 10px;
 }
 .banner p{
+	font-family: 'Dancing Script', cursive;
 	font-size: 18px;
 	color: #fff;
 }
@@ -101,8 +106,8 @@ ul.nav{
 	width: 190px;
 	height: 50px;
 	font-size: 14px;
-	color: #0b1016;
-	background: #cfc91d;
+	color: #D79F40;
+	background: #A92E0C;
 	border-radius: 2px;
 	border: 0px;
 	font-weight: 800;
@@ -115,8 +120,8 @@ ul.nav{
 
 }
 .banner button:hover{
-	background: red;
-	color: #fff;
+	background: #F5F2FB;
+	color: #D79F40;
 }
 .dropdowncontent{
 	display: none;
@@ -141,13 +146,31 @@ ul.nav{
 	display: block;
 }
 
+
+#video-background {
+  
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -9999;
+}
+
+#video-background.collapsing {
+  display:none;
+}
+
+
 /*about section*/
 .about{
-	background: #fff;
+	background: #E6D5A1;
 }
 .about h2{
 	font-size: 46px;
-	color: #02918c;
+	color: #4A3820;
 	font-weight: 800;
 	text-transform: uppercase;
 	margin-top: 90px;
@@ -156,10 +179,18 @@ ul.nav{
 .about-heading img{
 	margin-bottom: 30px;
 }
+.about-heading h1{
+	font-size: 46px;
+	font-weight: 800;
+	color: #4A3820;
+	margin-top: 90px;
+	margin-bottom: 30px;
+
+}
 .about-heading p{
 	font-size: 16px;
 	color: #7e8287;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 
 }
 .about-heading p span{
@@ -202,11 +233,44 @@ ul.nav{
 	color: #fff;
 }
 
+/*slection area*/
+.selection{
+
+
+}
+.selection-row{
+	margin: 0;
+	padding: 0;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+.myCarousel{
+	position: absolute;
+	margin-top: 100px;
+}
+.selection-heading p{
+font-size: 16px;
+	color: #7D5C2F;
+	margin-bottom: 60px;
+
+}
+.selection-heading h2{
+	font-size: 46px;
+	color: #E6D5A1;
+	margin-top: 100px;
+	font-weight: 800;
+	margin-bottom: 35px;
+}
+
 /*portfolio area*/
 
 .portfolio h2{
 	font-size: 46px;
-	color: #02918c;
+	color: #E6D5A1;
 	margin-top: 100px;
 	font-weight: 800;
 	margin-bottom: 35px;
@@ -221,12 +285,12 @@ ul.nav{
 }
 .portfolio-heading p{
 	font-size: 16px;
-	color: #7e8287;
+	color: #E67026;
 	margin-bottom: 80px;
 }
 .single-portfolio{
 	margin: 0;
-	padding: 1px;
+	padding: 3px;
 	position: relative;
 }
 .single-portfolio i.fa {
@@ -254,7 +318,7 @@ ul.nav{
   	left: 0px;
 	width: 100%;
 	height: 100%;
-	background: rgba(2, 145, 140, 0.2);
+	background: rgba( 74,56,32, 0.7);
 	display: none;
 }
 .single-portfolio:hover .portfolio-details{
@@ -286,7 +350,7 @@ hr{
     margin-right: auto;
     border-style: dashed;
     border-width: 25px;
-    border-color:#02918c;
+    border-color:#7D5C2F;
 } 
 .blank1{
 height: 900px;
@@ -294,7 +358,7 @@ height: 900px;
 }
 
 .blank2{
-height: 100px;
+height: 0px;
 
 }
 
@@ -302,88 +366,42 @@ height: 100px;
 height: 700px;
 
 }
+.blank4{
+height: 100px;
+
+}
 
 /* end of portfolio */
 
-/*contact area*/
-.contact{}
-.contact h2{
-	font-size: 46px;
-	color: #02918c;
-	margin-top: 100px;
-	font-weight: 800;
-	margin-bottom: 35px;
-}
-.contact p{
-	font-size: 16px;
-	color: #7e8287;
-	margin-top: 30px;
-	margin-bottom: 70px;
-}
 .contact-form{
-	margin: 0;
-	padding: 0;
-	background: #0b0b0b;
-	overflow: hidden;
+background-color: #1E1711;
+font-family: 'Open Sans', sans-serif;
+
 }
-.contact-form input{
-	text-align: center;
-	margin-bottom: 50px;
-	border-bottom: 2px solid #898989;
-	border-left: 0;
-	border-top: 0;
-	border-right: 0;
-	background: transparent;
-	color: #fff;
-}
-.contact-form input:focus{
-	outline: none;
-}
-input.name{
-	margin-top: 55px;
-	width: 640px;
-}
-input.email{
-	width: 640px;
-}
-input.message{
-	width: 920px;
-}
-.contact-form input.submit-btn{
-	width: 200px;
-	height: 50px;
-	border:0;
-	background: #cfc91d;
-	font-size: 14px;
-	color: #0b1016;
-	font-weight: 800;
-	margin:auto;
-	margin: 0 50px;
-	margin-bottom: 70px;
-	transition: all 0.5s ease 0s;
-	-webkit-transition: all 0.5s ease 0s;
-	-moz-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	-ms-transition: all 0.5s ease 0s;
-}
-.contact-form input.submit-btn:hover{
-	background: red;
-	color: #fff;
+.form-control {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #eee;
+    background-color: #36333d;
+    background-image: none;
+    border: 1px solid #36333d;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-.form-input::-webkit-input-placeholder {
-color:#EFEFEF;
-}
-.form-input:-moz-placeholder { /* Firefox 18- */
-   color:#EFEFEF; 
-}
-
-.form-input::-moz-placeholder {  /* Firefox 19+ */
-   color:#EFEFEF; 
+.form-control:focus {
+    color: #222;
+    background-color: #F5F2FB;
+    box-shadow: none;
 }
 
-.form-input:-ms-input-placeholder {  
-   color:#EFEFEF;  
+textarea {
+    resize: none;
 }
 
 /*footer area*/
@@ -407,6 +425,10 @@ responsive area
 ********************************/
 /* lg */ 
 @media (min-width: 1200px) {
+	.top-header img{
+		width:20%;
+		margin-top: 5px;
+	}
 	
 }
 
@@ -421,6 +443,7 @@ responsive area
 	.blank3{
 	height: 570px;
 	}
+	
 }
 
 /* sm */
@@ -486,7 +509,7 @@ responsive area
     border-width: 15px;
 	} 
 	.top-header img{
-		width:70%;
+		width:50%;
 	}
 }
 
@@ -519,6 +542,9 @@ responsive area
 	}
 	.about-inside{
 		padding: 0px;
+	}
+	.top-header img{
+		width:70%;
 	}
 }
 

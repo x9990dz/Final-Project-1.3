@@ -1,3 +1,4 @@
+
 // smoothscroll credit to  https://www.youtube.com/watch?v=-SnKQsM_BfQ, https://jsfiddle.net/cse_tushar/Dxtyu/141/ (author Tushar Gupta)
 (function($) {
 
@@ -50,13 +51,15 @@ function onScroll(event){
    jQuery(window).scroll(function() {
       var windowScrollPosTop = jQuery(window).scrollTop();
 
-      if(windowScrollPosTop >= 200) {
-        jQuery(".logo").css({"margin-top": "20px", "margin-bottom": "20px"});
-        jQuery(".navbar-default").css({"margin-top": "7px", "margin-bottom": "0"});
+      if(windowScrollPosTop >= 250) {
+        jQuery(".logo").css({"margin-top": "5px", "margin-bottom": "5px"});
+        jQuery(".navbar-default").css({"margin-top": "0px", "margin-bottom": "2", "background-color": "#7D5C2F"});
+        jQuery(".top-header").css({"background-color": "#7D5C2F"});
       }
       else{
-        jQuery(".logo").css({"margin-top": "8px", "border-bottom": "0"});
-         jQuery(".navbar-default").css({"margin-top": "25px", "margin-bottom": "15px"});
+        jQuery(".logo").css({"margin-top": "10px", "border-bottom": "0"});
+         jQuery(".navbar-default").css({"margin-top": "15px", "margin-bottom": "15px", "background-color": "transparent"});
+         jQuery(".top-header").css({"background-color": "transparent"});
         
       }
    });
